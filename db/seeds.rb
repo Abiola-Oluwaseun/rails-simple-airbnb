@@ -7,8 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-Flat
+puts " cleaning up database"
 
+Flat.destroy_all
+puts "creating flats"
 
 Flat.create!(
   name: 'Light & Spacious Garden Flat London',
